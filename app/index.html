@@ -25,32 +25,28 @@
   <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
   <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-  <meta name="msapplication-TileColor" content="#2F3BA2">
+  <!-- <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png"> -->
+  <!-- <meta name="msapplication-TileColor" content="#ff4500"> -->
 
   <!-- Color the status bar on mobile devices -->
-  <meta name="theme-color" content="#2F3BA2">
+  <!-- <meta name="theme-color" content="#ff4500"> -->
 
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;text=%D0%9D%D0%BE%D0%B2%D1%81%D1%82%D0%B8%D0%9F%D1%80%D0%B5%D0%BA%D1%8BF.AQ%D0%9E%D0%BB%D0%B0%D0%B1" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"/>
+  <link rel="stylesheet" href="styles/minimal.css"/>
+
+  <style>
+  </style>
 </head>
 <body>
 
 <div class="content">
 
   <header class="header">
-    <div class="header__logo">
-      <div class="header__logo__icon"></div>
-    </div>
-
-    <div class="header__about">
-      <b><span style="color: red">it</span>lab</b> — это студенческая лаборатория.
-
-      <br>
-      Не следует, однако забывать, что укрепление и развитие структуры требуют от нас
-      анализа соответствующий условий активизации. Значимость этих проблем настолько
-      очевидна, что сложившаяся структура организации обеспечивается широкому кругу.
-    </div>
+    <img src="images/logo.jpg" class="header__logo" alt="logotype"/>
+    студенческая лаборатория
   </header>
 
 
@@ -60,22 +56,22 @@
       <h1 class="colon__header">Новости</h1>
 
       <article class="colon__post post">
-        Ура! Мы наконец-таки зарелизили БРС и теперь всё стало очень круто!
-        <time class="post__time">27.09.17</time>
+        <time class="post__time">24 сентября</time>
+        Мы начинаем новый проект и нам срочно нужны разработчики!
       </article>
 
       <hr class="post__delim">
 
       <article class="colon__post post">
-        Теперь мы организация, и нам платят за БРС. Ура, товарищи!
-        <time class="post__time">27.09.17</time>
+        <time class="post__time">31 июня</time>
+        IT-лаборатория стала организацией и теперь нам платят за БРС.
       </article>
 
       <hr class="post__delim">
 
       <article class="colon__post post">
-        Ещё одна очень незначительная новость, господа. Мы открыли сайт. Ура, ура, ура!
-        <time class="post__time">27.09.17</time>
+        <time class="post__time">12 мая</time>
+        Ещё одна очень незначительная новость, господа. Мы открыли сайт.
       </article>
 
     </section>
@@ -84,75 +80,70 @@
       <h1 class="colon__header">Проекты</h1>
       <div class="colon__projects projects">
 
-        <a href="#" class="projects__pr">
-          <div class="projects__pr__rect"></div>
-          БРС
-        </a>
+        <p><a href="https://grade.sfedu.ru/">Сервис БРС</a>
+        — электронная зачётная книга студентов и инструмент выставления оценок преподавателями.
+        Используем:&nbsp; <span class="pr__tech">PHP, JavaScript, MySQL, JQuery</span>.
 
-        <a href="#" class="projects__pr">
-          <div class="projects__pr__rect"></div>
-          Анкетирование
-        </a>
+        <p><a href="https://github.com/a1tavista/vote.sfedu.ru">Анкетирование</a>
+        — сайт для сбора обратной связи студентов, который происходит в конце каждого семестра.
+        Используем:&nbsp; <span class="pr__tech">Ruby (on Rails)</span>.
 
-        <a href="#" class="projects__pr">
-          <div class="projects__pr__rect"></div>
-          Расписание
-        </a>
+        <p><a href="http://users.mmcs.sfedu.ru/~schedule/" class="projects__pr">Расписание</a>
+        — сервис, где можно посмотреть: занята аудитория или нет, в какие дни ведёт пары преподаватель, расписание группы или целого курса.
+        Используем:&nbsp; <span class="pr__tech">JavaScript, Express.js, Vue.js, JQuery</span>.
+        Есть приложения для <a href="https://play.google.com/store/apps/details?id=com.nolan.mmcs_schedule">Android</a>, <a href="#">iOS</a>, и бот в <a href="https://t.me/mmschedbot">телеграме</a>.
 
-        <a href="#" class="projects__pr">
-          <div class="projects__pr__rect"></div>
-          mmcs-meetups
-        </a>
+        <p><a href="http://meetups.sfedu.ru">Митапы</a>
+        — агрегатор всех семинаров, митапов, воркшопов, которые проводятся на мехмате.
+        Используем:&nbsp; <span class="pr__tech">JavaScript, Koa.js, Vue.js</span>.
+
+        <p><a href="https://github.com/xamgore/mmcs-news-scraper">Бот новостей</a>
+        — ретранслятор новостей из сайта mmcs.sfedu.ru в чат <a href="https://t.me/mmcs_family">#мехматсемья</a> в телеграме.
+        Используем:&nbsp; <span class="pr__tech">JavaScript</span>.
 
       </div>
     </section>
   </section>
 
 
+  <section class="paragraph faq">
+    <h1 class="paragraph__header">F.A.Q.</h1>
+    <ul>
+      <li>
+        <div>Чем занимается лаборатория?</div>
+        В основном разработкой и поддержкой проектов для нужд мехмата и университета.
+      </li>
+
+      <li>
+        <div>Почему мне должно быть интересно поучаствовать в лаборатории?</div>
+        Здесь можно поработать над большими проектами, получить опыт командой разработки. Улучшить сервисы, которые вы используете каждый день.
+      </li>
+
+      <li>
+        <div>Какие профиты я могу получить?</div>
+        В случае успешной работы — баллы в индивидуальный рейтинг и бесконечную благодарность от дирекции института и руководителей лаборатории. Ещё можно добавить строчку в резюме.
+      </li>
+
+      <li>
+        <div>Как присоединиться к лаборатории?</div>
+        Если вы студент без долгов, то приходите в 320 аудиторию, мы с вами обсудим все детали. Ещё можно написать в чат <a href="https://t.me/mmcs_family">#мехматсемья</a> в телеграме. Все наши проекты хостятся либо на <a href="https://github.com/search?utf8=✓&amp;q=topic%3Ammcs">github</a>'e, либо на <a href="https://gitlab.mmcs.sfedu.ru">gitlab</a>'e, можете выбрать любой, а мы вам поможем разобраться.
+      </li>
+    </ul>
+  </section>
+
   <section class="paragraph">
     <h1 class="paragraph__header">О лаборатории</h1>
-    <p>
-      Что мы здесь вообще делаем?
-      Кому это нужно?
-      Почему это нужно нам?
-      Какие профиты мы получим?
-      Почему нам стоит присоединиться к лаборатории?
-      Как это сделать?
-      Не попахивает ли это рабством?
-      А есть задачи <em>для новичков</em>?
-      А их можно посмотреть уже <em>прямо сейчас</em>?
-      Эти вопросы обязательно нужно раскрыть в этом параграфе,
-      иначе смысла в лаборатории и в этом сайте нет.
-    </p>
+
+    <p>📝 <a href="images/order66.pdf">Приказ №66</a> о создании лаборатории
+
+    <p>👽 Руководители <a href="#">Штейнберг&nbsp;Р.Б.</a> и <a href="#">Чердынцева&nbsp;М.И.</a>
+
+    <p>🏠 Ростов-на-Дону, ул.&nbsp;Мильчакова&nbsp;8а, аудитория&nbsp;320
+
+
   </section>
-
-  <section class="paragraph">
-    <h1 class="paragraph__header">Лаборанты-хипстеры</h1>
-    <div style="display: flex; justify-content: center">
-
-      <div class="photo"></div>
-      <div class="photo"></div>
-      <div class="photo"></div>
-      <div class="photo"></div>
-      <div class="photo"></div>
-      <div class="photo"></div>
-
-    </div>
-  </section>
-
 </div>
-
-
-<footer class="footer">
-  <div class="footer__content">
-    <span>г. Ростов-на-Дону, ул. Мильчакова 8а, ауд. 320</span>
-    <span>сайт сверстал <a href="http://vk.com/strebz">@xamgore</a></span>
-  </div>
-</footer>
-
-
-<script src="scripts/main.js"></script>
-
 
 </body>
 </html>
+<!-- верстал xamgore -->

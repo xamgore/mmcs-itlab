@@ -1,0 +1,120 @@
+html {
+  background: #fff;
+  color: #333;
+  font: 16px/1.4 Open Sans, Helvetica, Arial, sans-serif;
+  /*border-top: 6px solid #ff4500;*/
+  border-top: 6px solid #f90406;
+}
+
+body {
+  max-width: 720px;
+  padding: 20px 40px;
+  margin: 0 auto;
+}
+
+a {
+  color: #e3695f;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+a[href="#"] {
+  color: #2196f3;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+p {
+  margin: 1em 0;
+}
+
+hr {
+  border: 0;
+  margin: 0.8em 0;
+  border-top: 0.9px solid lightgray;
+}
+
+h1 {
+  margin: 3rem 0 1rem;
+  font-size: 2em;
+  font-family: 'Roboto Slab', monospace;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.8em;
+  color: #555;
+}
+
+.header__logo {
+  max-width: 220px;
+  width: 100%;
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+.post__time {
+  color: orangered;
+  font-size: 0.75rem;
+  margin-right: 1em;
+  vertical-align: text-bottom;
+  min-width: 6em;
+  display: inline-block;
+  text-align: right;
+}
+
+.pr__tech {
+  color: #555;
+  font-family: 'Source Code Pro', monospace;
+  letter-spacing: -0.9px;
+  /*white-space: nowrap;*/
+}
+
+.projects p {
+  margin: 1em 0 1.4em;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 2em;
+}
+
+li div {
+  font-weight: bold;
+}
+
+li {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+}
+
+@media screen and (max-width: 540px) {
+  body {
+    padding: 12px;
+    font-size: 0.875em;
+  }
+
+  .post {
+    font-size: 0.9em
+  }
+
+  .post__time {
+    font-size: 0.65rem;
+  }
+}
